@@ -1,6 +1,6 @@
 # Pytest Plugins Example
 
-[//]: # (This repo contains the sample code for the article - [What Is `pytest.ini` And How To Save Time Using Pytest Config]&#40;https://pytest-with-eric.com/pytest-best-practices/pytest-ini/&#41;)
+This repo contains the sample code for the article - [8 Useful Pytest Plugins To Make Your Python Unit Tests Easier, Faster and Prettier](https://pytest-with-eric.com/pytest-best-practices/pytest-plugins/)
 
 # Requirements
 * Python (3.10.9)

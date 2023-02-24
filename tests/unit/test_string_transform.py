@@ -18,12 +18,10 @@ def test_count_vowels():
 def test_remove_spaces_in_string_no_delay():
     assert remove_spaces_in_string("Python", 0) == "Python"
     assert (
-        remove_spaces_in_string(
-            "This is a random string", 0) == "Thisisarandomstring"
+        remove_spaces_in_string("This is a random string", 0) == "Thisisarandomstring"
     )
     assert (
-        remove_spaces_in_string(
-            "This is a random string with numbers 1234567890", 0)
+        remove_spaces_in_string("This is a random string with numbers 1234567890", 0)
         == "Thisisarandomstringwithnumbers1234567890"
     )
 
@@ -31,12 +29,10 @@ def test_remove_spaces_in_string_no_delay():
 def test_remove_spaces_in_string_delay():
     assert remove_spaces_in_string("Python", 2) == "Python"
     assert (
-        remove_spaces_in_string(
-            "This is a random string", 2) == "Thisisarandomstring"
+        remove_spaces_in_string("This is a random string", 2) == "Thisisarandomstring"
     )
     assert (
-        remove_spaces_in_string(
-            "This is a random string with numbers 1234567890", 2)
+        remove_spaces_in_string("This is a random string with numbers 1234567890", 2)
         == "Thisisarandomstringwithnumbers1234567890"
     )
 
@@ -44,6 +40,5 @@ def test_remove_spaces_in_string_delay():
 def test_remove_spaces_in_string_mock_delay(mocker):
     mocker.patch("string_transformations.core.delay", return_value=None)
     assert (
-        remove_spaces_in_string(
-            "This is a random string", 3) == "Thisisarandomstring"
+        remove_spaces_in_string("This is a random string", 3) == "Thisisarandomstring"
     )
